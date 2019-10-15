@@ -1,6 +1,15 @@
 language: node_js
 node_js:
   - "stable"
+
+before_install:
+ - ls -la
+ -npm install
+ -mkdir public
+ -ls -la
+
+
+
 deploy:
   provider: pages
   skip_cleanup: true
